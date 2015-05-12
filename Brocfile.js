@@ -6,6 +6,9 @@ var app = new EmberApp({
   'ember-cli-bootstrap-sassy': {
     js: false,
     quiet: true
+  },
+  'autoprefixer': {
+    cascade: false
   }
 });
 
