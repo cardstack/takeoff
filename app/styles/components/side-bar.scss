@@ -1,11 +1,11 @@
 .sideBar {
-  height: 100%;
   background-color: $colors-gray-darkest;
   padding: $size-padding-default;
   color: $colors-white-base;
 
   &__content {
     padding: $size-padding-xlarge;
+    padding-bottom: $size-padding-small;
   }
 
   &__heading {
