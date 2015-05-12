@@ -1,0 +1,9 @@
+{
+  "name": "environment",
+  "dependencies": {
+    "ember-cli-babel": "*"
+  },
+  "keywords": [
+    "ember-addon"
+  ]
+}

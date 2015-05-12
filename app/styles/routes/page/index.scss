@@ -1,0 +1,18 @@
+body#page__index {
+  background-color: $colors-yellow-base;
+
+  main {
+    float: left;
+    width: $size-main-width;
+    display: inline-block;
+  }
+
+  aside {
+    width: $size-aside-width;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,1 @@
+window.Oasis = requireModule('oasis');

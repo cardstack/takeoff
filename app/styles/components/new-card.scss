@@ -1,0 +1,8 @@
+.newCard {
+  @include centerChildElement('img');
+  border: 2px dashed $colors-white-base;
+  background: $colors-yellow-dark;
+  width: 100%;
+  height: $size-card-preview-height;
+  margin-bottom: $size-margin-large;
+}

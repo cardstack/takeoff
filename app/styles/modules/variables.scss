@@ -1,0 +1,36 @@
+// typography
+$fontFamily-main: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$fontWeight-light: 300;
+$fontWeight-regular: 400;
+$fontWeight-semibold: 600;
+
+// colors
+$colors-blue-dark: rgb(0, 135, 162);
+$colors-blue-medium: rgb(19, 154, 201);
+$colors-blue-light: rgb(54, 199, 245);
+$colors-yellow-base: rgb(240, 216, 70);
+$colors-yellow-dark: rgb(189, 170, 55);
+$colors-turquoise-dark: rgb(25, 92, 106);
+$colors-gray-darkest: rgb(43, 43, 43);
+$colors-gray-darker: rgb(70, 70, 70);
+$colors-gray-dark: rgb(63, 72, 74);
+$colors-gray-medium: rgb(121, 121, 121);
+$colors-gray-light: rgb(158, 158, 158);
+$colors-gray-lighter: rgb(216, 216, 216);
+$colors-white-base: rgb(255, 255, 255);
+$colors-black-base: rgb(0, 0, 0);
+
+// sizing
+$size-base: 5px;
+$size-margin-small: $size-base * 2;
+$size-margin-default: $size-base * 4;
+$size-margin-large: $size-base * 6;
+$size-padding-small: $size-base * 1;
+$size-padding-default: $size-base * 2;
+$size-padding-large: $size-base * 3;
+$size-padding-xlarge: $size-base * 4;
+
+$size-card-preview-height: 400px;
+
+$size-main-width: 75%;
+$size-aside-width: 100% - $size-main-width;

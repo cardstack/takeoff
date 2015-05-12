@@ -1,0 +1,16 @@
+@mixin centerChildElement($childElement: 'div', $useFlexbox: true) {
+  @if $useFlexbox == true {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } @else {
+    position: relative;
+
+    #{$childElement} {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

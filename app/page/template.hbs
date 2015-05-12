@@ -1,0 +1,18 @@
+<main>
+  {{nav-bar}}
+  <div class="container-fluid">
+    <div class="row">
+      {{bread-crumb currentRouteName=application.currentRouteName}}
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      {{outlet}}
+    </div>
+  </div>
+</main>
+
+<aside>
+  {{side-bar}}
+</aside>

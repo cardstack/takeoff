@@ -1,0 +1,12 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  height: 100%;
+}
+
+body, html {
+  font-family: $fontFamily-main;
+}

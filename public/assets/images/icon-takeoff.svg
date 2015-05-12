@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="931px" height="216px" viewBox="0 0 931 216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
+    <title>http___icon-park.com_imagefiles_paper_plane_yellow + Takeoff</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="41.9361381%" y1="42.2213872%" x2="55.9896582%" y2="55.7781741%" id="linearGradient-1">
+            <stop stop-color="#D9BF0A" offset="31.17%"></stop>
+            <stop stop-color="#F2D111" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-6.70071748e-05%" y1="49.9999787%" x2="100.000034%" y2="49.9999787%" id="linearGradient-2">
+            <stop stop-color="#F0D508" offset="0%"></stop>
+            <stop stop-color="#F2DC3A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-2.64036162e-05%" y1="49.9999787%" x2="100.000053%" y2="49.9999787%" id="linearGradient-3">
+            <stop stop-color="#F2DA21" offset="0%"></stop>
+            <stop stop-color="#F2DC42" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-6.70071748e-05%" y1="49.9999352%" x2="100.000034%" y2="49.9999352%" id="linearGradient-4">
+            <stop stop-color="#F0D508" offset="0%"></stop>
+            <stop stop-color="#F2DC3A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="44.5772164%" y1="37.0638756%" x2="62.1425674%" y2="58.9766909%" id="linearGradient-5">
+            <stop stop-color="#E6CF25" offset="0%"></stop>
+            <stop stop-color="#E6CE1F" offset="0%"></stop>
+            <stop stop-color="#E6CF07" offset="2.02%"></stop>
+            <stop stop-color="#C5AC06" offset="67.61%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9970391%" y1="20.8141788%" x2="53.5546797%" y2="99.6854464%" id="linearGradient-6">
+            <stop stop-color="#E4CF20" offset="0%"></stop>
+            <stop stop-color="#F2DB2B" offset="21.46%"></stop>
+            <stop stop-color="#F2DC3A" offset="66.8%"></stop>
+        </linearGradient>
+        <linearGradient x1="-6.70071748e-05%" y1="50.0000804%" x2="100.000034%" y2="50.0000804%" id="linearGradient-7">
+            <stop stop-color="#F2DA21" offset="0%"></stop>
+            <stop stop-color="#F2DC42" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="48.2301013%" y1="44.730338%" x2="75.9486032%" y2="90.0525742%" id="linearGradient-8">
+            <stop stop-color="#E6CF25" offset="0%"></stop>
+            <stop stop-color="#E6CE1F" offset="0%"></stop>
+            <stop stop-color="#E6CE0C" offset="3.64%"></stop>
+            <stop stop-color="#DCB807" offset="67.61%"></stop>
+        </linearGradient>
+        <linearGradient x1="75.5503258%" y1="49.8961977%" x2="20.6224623%" y2="75.9517088%" id="linearGradient-9">
+            <stop stop-color="#E4CF20" offset="0%"></stop>
+            <stop stop-color="#F2DB2B" offset="21.46%"></stop>
+            <stop stop-color="#F2DC3A" offset="66.8%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="http___icon-park.com_imagefiles_paper_plane_yellow-+-Takeoff" sketch:type="MSLayerGroup" transform="translate(0.000000, -24.000000)">
+            <g id="http___icon-park.com_imagefiles_paper_plane_yellow" transform="translate(0.000000, 23.812500)" sketch:type="MSShapeGroup">
+                <g id="Group">
+                    <path d="M99.4123707,211.93325 L100.982971,151.992436 L275.885272,0.316244876 L99.4123707,211.93325 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+                    <path d="M215.287639,216.242546 L100.982971,151.992436 L99.4123707,211.93325 L80.0364046,142.089099 L0.210121423,114.589124 L275.885272,0.316244876 L215.287639,216.242546 Z" id="Shape" fill="url(#linearGradient-2)"></path>
+                    <path d="M275.885272,0.316244876 L215.287639,216.242546 L100.982971,151.992436 L275.885272,0.316244876 Z" id="Shape" fill="url(#linearGradient-3)"></path>
+                    <path d="M80.0364046,142.089099 L0.210121423,114.589124 L275.885272,0.316244876 L80.0364046,142.089099 Z" id="Shape" fill="url(#linearGradient-4)"></path>
+                    <path d="M100.982971,151.992436 L160.112063,100.715719 L275.885272,0.316244876 L80.0364046,142.089099 L99.4123707,211.93325 L100.982971,151.992436 Z" id="Shape" fill="url(#linearGradient-5)"></path>
+                    <path d="M145.259942,94.8743821 L0.210121423,114.589124 L80.0364046,142.089099 L145.259942,94.8743821 Z" id="Shape" fill="url(#linearGradient-6)"></path>
+                    <path d="M275.885272,0.316244876 L0.210121423,114.589124 L145.259942,94.8743821 L275.885272,0.316244876 Z" id="Shape" fill="url(#linearGradient-7)"></path>
+                    <path d="M145.259942,94.8743821 L146.394597,94.7203966 L149.055981,110.303731 L275.885272,0.316244876 L145.259942,94.8743821 Z" id="Shape" fill="url(#linearGradient-8)"></path>
+                    <path d="M100.982971,151.992436 L158.891973,101.773393 L215.287639,216.242546 L100.982971,151.992436" id="Shape" fill="url(#linearGradient-9)"></path>
+                </g>
+            </g>
+            <text id="Takeoff" sketch:type="MSTextLayer" font-family="Bebas Neue" font-size="206.375" font-weight="bold" fill="#FFFFFF">
+                <tspan x="390.754237" y="196">Takeoff</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

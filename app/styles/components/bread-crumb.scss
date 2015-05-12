@@ -1,0 +1,12 @@
+.breadcrumb {
+  background: none;
+
+  & > li + li:before {
+    content: "> ";
+    color: $colors-gray-darkest;
+  }
+
+  li a {
+    color: $colors-gray-darkest;
+  }
+}

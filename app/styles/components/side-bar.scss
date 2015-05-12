@@ -1,0 +1,54 @@
+.sideBar {
+  height: 100%;
+  background-color: $colors-gray-darkest;
+  padding: $size-padding-default;
+  color: $colors-white-base;
+
+  &__content {
+    padding: $size-padding-xlarge;
+  }
+
+  &__heading {
+    margin-bottom: $size-margin-small;
+  }
+
+  &__title {
+    font-size: 1em;
+    font-weight: $fontWeight-semibold;
+    margin-bottom: $size-margin-default;
+  }
+
+  &__text {
+    font-weight: $fontWeight-light;
+    line-height: 1.5em;
+  }
+
+  &__steps {
+    font-weight: $fontWeight-light;
+    padding-left: 0;
+    counter-reset: li;
+
+    li {
+      list-style: none;
+      line-height: 1.5em;
+      position: relative;
+      margin-left: 2em;
+      margin-bottom: $size-margin-small;
+      &:before {
+        box-sizing: border-box;
+        content: counter(li);
+        counter-increment: li;
+        background-color: $colors-white-base;
+        color: $colors-gray-darkest;
+        border-radius: 100%;
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        left: -3.5em;
+        font-weight: $fontWeight-semibold;
+        padding: $size-padding-small;
+        text-align: center;
+      }
+    }
+  }
+}

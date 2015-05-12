@@ -1,0 +1,1 @@
+window.Conductor = requireModule('conductor');

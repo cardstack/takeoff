@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 921 + Fill 922</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Fill-921-+-Fill-922" sketch:type="MSLayerGroup" fill="#FFFFFF">
+            <g sketch:type="MSShapeGroup">
+                <path d="M29,56 C14.112,56 2,43.888 2,29 C2,14.112 14.112,2 29,2 C43.888,2 56,14.112 56,29 C56,43.888 43.888,56 29,56 M29,0 C13.009,0 0,13.01 0,29 C0,44.99 13.009,58 29,58 C44.991,58 58,44.99 58,29 C58,13.01 44.991,0 29,0" id="Fill-921"></path>
+                <path d="M44.8696,28 L29.9996,28 L29.9996,13.869 C29.9996,13.316 29.5526,12.869 28.9996,12.869 C28.4476,12.869 27.9996,13.316 27.9996,13.869 L27.9996,28 L14.6086,28 C14.0566,28 13.6086,28.447 13.6086,29 C13.6086,29.553 14.0566,30 14.6086,30 L27.9996,30 L27.9996,44.131 C27.9996,44.684 28.4476,45.131 28.9996,45.131 C29.5526,45.131 29.9996,44.684 29.9996,44.131 L29.9996,30 L44.8696,30 C45.4216,30 45.8696,29.553 45.8696,29 C45.8696,28.447 45.4216,28 44.8696,28" id="Fill-922"></path>
+            </g>
+        </g>
+    </g>
+</svg>
