@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="320px" height="486px" viewBox="0 0 320 486" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Group Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Select-Template-type" sketch:type="MSArtboardGroup" transform="translate(-180.000000, -263.000000)">
+            <g id="Group-Copy" sketch:type="MSLayerGroup" transform="translate(190.000000, 268.162162)">
+                <rect id="Rectangle-3" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="1" width="299.911477" height="332.972973"></rect>
+                <rect id="Rectangle-2" opacity="0.433010728" fill="#000000" sketch:type="MSShapeGroup" x="0" y="1.54054054" width="299.911477" height="181.891892"></rect>
+                <rect id="Rectangle-7-Copy" fill="#FFFFFF" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="0" y="1.54054054" width="299.911477" height="17.5675676"></rect>
+                <rect id="Rectangle-23" fill="#D8D8D8" sketch:type="MSShapeGroup" x="2.29099045" y="4.51351351" width="36.4475753" height="10.8108108"></rect>
+                <rect id="Rectangle-23-Copy" fill="#D8D8D8" sketch:type="MSShapeGroup" x="54.0465474" y="27.4864865" width="191.818382" height="27.027027"></rect>
+                <rect id="Rectangle-23-Copy-3" fill="#D8D8D8" sketch:type="MSShapeGroup" x="91.0745606" y="154.243243" width="117.6736" height="23.2432432"></rect>
+                <rect id="Rectangle-23-Copy-2" fill="#D8D8D8" sketch:type="MSShapeGroup" x="91.1189383" y="62.8918919" width="117.6736" height="85.6756757"></rect>
+                <rect id="Rectangle-10" fill="#2B2B2B" sketch:type="MSShapeGroup" x="0" y="183.432432" width="299.911477" height="40.5405405"></rect>
+                <rect id="Rectangle-10-Copy" fill="#2B2B2B" sketch:type="MSShapeGroup" x="0" y="333.972973" width="299.911477" height="132.702703"></rect>
+                <rect id="Rectangle-23-Copy-9" fill="#D8D8D8" sketch:type="MSShapeGroup" x="44.361906" y="346.540541" width="211.187665" height="85.6756757"></rect>
+                <rect id="Rectangle-23-Copy-4" fill="#D8D8D8" sketch:type="MSShapeGroup" x="54.0465474" y="190.189189" width="191.818382" height="27.027027"></rect>
+                <g id="Group" transform="translate(44.361906, 233.702703)" fill="#D8D8D8" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-23-Copy-5" x="9.9475983e-14" y="0.15278717" width="211.187665" height="85.182328"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
