@@ -3,17 +3,6 @@
 }
 
 .navbar-default {
-  background: $colors-gray-darker;
-  border-radius: 0;
-  border: none;
-
-  .navbar-nav > li > a {
-    color: $colors-white-base;
-    &:hover {
-      color: $colors-gray-lighter;
-    }
-  }
-
   .navbar-brand {
     img {
       height: 20px;
