@@ -9,7 +9,7 @@ body#page__index {
     right: $size-aside-width;
     width: $size-main-width;
     overflow-y: auto;
-    margin-top: 50px;
+    margin-top: $size-navBar-height;
     padding-top: $size-padding-large;
   }
 

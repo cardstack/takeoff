@@ -1,0 +1,23 @@
+#modal-overlays {
+  @include centerChildElement('.ember-modal-dialog', false);
+  height: 100vh;
+}
+
+.ember-modal-overlay {
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1100;
+}
+
+.ember-modal-dialog {
+  z-index: 1200;
+  position: fixed;
+
+  &.ember-modal-dialog-in-place {
+    position: relative;
+  }
+}

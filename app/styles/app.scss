@@ -3,6 +3,9 @@
 @import "bootstrap-custom";
 @import "modules/typography";
 @import "modules/utils";
+@import "modules/ember-modal-dialog/ember-modal-structure";
+@import "modules/ember-modal-dialog/ember-modal-appearance";
+@import "modules/modals";
 
 // global
 @import "global";

@@ -1,0 +1,10 @@
+.ember-modal-dialog {
+  background-color: $colors-white-base;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.50);
+  padding: $size-padding-default;
+}
+
+.ember-modal-overlay.translucent {
+  opacity: 0.7;
+  background-color: $colors-black-base;
+}
