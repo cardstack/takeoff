@@ -1,16 +1,14 @@
 import Ember from 'ember';
 
 const {
-  get: get,
-  set: set,
-  computed
+  set: set
 } = Ember;
 
 export default Ember.Route.extend({
   breadCrumb: null,
 
   afterModel(model) {
-    const title = model.get('title');
+    const title = `Viewing: ${model.get('title')}`;
 
     set(this, 'breadCrumb', {
       title,
