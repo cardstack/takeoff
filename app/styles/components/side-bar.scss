@@ -29,9 +29,9 @@
     counter-reset: li;
 
     li {
+      position: relative;
       list-style: none;
       line-height: 1.5em;
-      position: relative;
       margin-left: 2em;
       margin-bottom: $size-margin-small;
       &:before {

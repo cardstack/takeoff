@@ -1,5 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  classNames: [ 'newCard' ]
+  classNames: [ 'newCard' ],
+
+  click: function() {
+    this.sendAction('create');
+  }
 });

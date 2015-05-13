@@ -1,21 +1,5 @@
 {{nav-bar}}
 <main>
-  <button {{action "toggleModal"}}>Toggle Modal</button>
-
-  {{#if isShowingModal}}
-    {{#modal-dialog alignment="none" translucentOverlay=true container-class="pageModal"}}
-      <div class="pageModal__body">
-        <div class="col-md-6">
-          <h5 class="pageModal__templateTitle">Template #1</h5>
-          <img src="assets/images/template-1.svg" class="img-responsive" alt="Template #1">
-        </div>
-        <div class="col-md-6">
-          <h5 class="pageModal__templateTitle">Template #2</h5>
-          <img src="assets/images/template-2.svg" class="img-responsive" alt="Template #2">
-        </div>
-      </div>
-    {{/modal-dialog}}
-  {{/if}}
   <div class="container-fluid">
     <div class="row">
       {{bread-crumb currentRouteName=application.currentRouteName}}
