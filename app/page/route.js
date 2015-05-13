@@ -27,6 +27,6 @@ export default Route.extend({
       imageUrl: 'http://www.placecage.com/300/350'
     });
 
-    return [ fakePage1, fakePage2, fakePage3 ];
+    return this.store.all('page');
   }
 });

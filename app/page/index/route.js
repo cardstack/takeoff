@@ -24,6 +24,19 @@ export default Route.extend({
       page.deleteRecord();
       model.removeObject(page);
       flashMessages.success('Page removed successfully');
+    },
+
+    createPage(templateId) {
+      const flashMessages = get(this, 'flashMessages');
+      const page = this.store.createRecord('page', {
+        templateId,
+        id: UUID.generate(),
+        title: 'Untitled page',
+        imageUrl: 'http://www.placecage.com/c/300/350'
+      });
+
+      flashMessages.success('Created new page');
+      this.send('closeModal');
     }
   }
 });
