@@ -2,18 +2,19 @@ import Ember from 'ember';
 
 const {
   get: get,
+  set: set,
   computed
 } = Ember;
 
 export default Ember.Route.extend({
-  breadCrumb: computed('currentModel.title', {
-    get() {
-      const title = get(this, 'currentModel.title');
+  breadCrumb: null,
 
-      return {
-        title,
-        iconName: 'download-black'
-      };
-    }
-  })
+  afterModel(model) {
+    const title = model.get('title');
+
+    set(this, 'breadCrumb', {
+      title,
+      iconName: 'download-black'
+    });
+  }
 });
