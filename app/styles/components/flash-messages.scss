@@ -1,0 +1,8 @@
+.flashMessages__container {
+  position: fixed;
+  top: $size-margin-default;
+  left: 10vw;
+  right: 10vw;
+  z-index: 2000;
+  text-align: center;
+}

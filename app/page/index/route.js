@@ -1,33 +1,13 @@
 import Ember from 'ember';
 import Route from '../../basic/route';
+import UUID from 'UUID';
+
+const {
+  get: get,
+  set: set
+} = Ember;
 
 export default Route.extend({
-  model() {
-    const fakePage1 = this.store.createRecord('page', {
-      templateId: 0,
-      title: 'The Mutants Are Revolting',
-      downloadUrl: 'http://www.example.com',
-      publicUrl: 'http://www.example.com',
-      imageUrl: 'http://www.placecage.com/c/300/350'
-    });
-    const fakePage2 = this.store.createRecord('page', {
-      templateId: 1,
-      title: 'A Taste of Freedom',
-      downloadUrl: 'http://www.example.com',
-      publicUrl: 'http://www.example.com',
-      imageUrl: 'http://www.placecage.com/g/300/350'
-    });
-    const fakePage3 = this.store.createRecord('page', {
-      templateId: 0,
-      title: 'How Hermes Requisitioned His Groove Back',
-      downloadUrl: 'http://www.example.com',
-      publicUrl: 'http://www.example.com',
-      imageUrl: 'http://www.placecage.com/300/350'
-    });
-
-    return [ fakePage1, fakePage2, fakePage3 ];
-  },
-
   actions: {
     toggleModal() {
       this.controller.toggleProperty('isShowingModal');
@@ -35,6 +15,15 @@ export default Route.extend({
 
     closeModal() {
       this.controller.set('isShowingModal', false);
+    },
+
+    removePage(id = null) {
+      const flashMessages = get(this, 'flashMessages');
+      const model = get(this, 'currentModel');
+      const page = model.findBy('id', id);
+      page.deleteRecord();
+      model.removeObject(page);
+      flashMessages.success('Page removed successfully');
     }
   }
 });

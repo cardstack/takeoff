@@ -24,6 +24,9 @@
 
   &__title {
     color: $colors-white-base;
+    &:hover {
+      color: $colors-gray-light;
+    }
   }
 
   &__footer {
@@ -53,8 +56,7 @@
       margin-bottom: 0;
       margin-top: $size-margin-xsmall;
       &:hover {
-        text-decoration: none;
-        color: $colors-gray-light
+        color: $colors-gray-light;
       }
     }
   }

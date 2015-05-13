@@ -18,5 +18,11 @@ export default Ember.Component.extend({
 
       return safeImageUrl;
     }
-  })
+  }),
+
+  actions: {
+    remove(id) {
+      this.sendAction('remove', id);
+    }
+  }
 });

@@ -9,6 +9,8 @@ $navbar-height: $size-navBar-height;
 $font-family-sans-serif: $fontFamily-main;
 $headings-font-weight: $fontWeight-semibold;
 
+$link-hover-decoration: none;
+
 // Core variables and mixins
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
@@ -41,7 +43,7 @@ $headings-font-weight: $fontWeight-semibold;
 // @import "bootstrap/badges";
 // @import "bootstrap/jumbotron";
 // @import "bootstrap/thumbnails";
-// @import "bootstrap/alerts";
+@import "bootstrap/alerts";
 // @import "bootstrap/progress-bars";
 // @import "bootstrap/media";
 @import "bootstrap/list-group";
