@@ -1,6 +1,61 @@
 .previewCard {
+  position: relative;
   background: $colors-white-base;
   width: 100%;
   height: $size-cardPreview-height;
   margin-bottom: $size-margin-large;
+
+  & > div {
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+  }
+
+  &:hover {
+    & > div {
+      opacity: 1;
+    }
+  }
+
+  &__header {
+    @include concatChildText('.previewCard__title');
+    background: rgba(0, 0, 0, 0.7);
+    padding: $size-padding-xsmall $size-padding-default;
+  }
+
+  &__title {
+    color: $colors-white-base;
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: $size-padding-default;
+  }
+
+  &__button {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin-right: $size-margin-small;
+    cursor: pointer;
+
+    &:last-child {
+      float: right;
+      margin-right: 0;
+    }
+
+    &__label {
+      display: block;
+      color: $colors-white-base;
+      margin-bottom: 0;
+      margin-top: $size-margin-xsmall;
+      &:hover {
+        text-decoration: none;
+        color: $colors-gray-light
+      }
+    }
+  }
 }

@@ -1,0 +1,17 @@
+<div class="previewCard__header">
+  <h5 class="previewCard__title">{{card.title}}</h5>
+</div>
+
+<div class="previewCard__footer">
+  {{#text-with-icon iconName="download" iconClass="previewCard__icon" class="previewCard__button" tagName='div'}}
+    <a class="previewCard__button__label">Download</a>
+  {{/text-with-icon}}
+
+  {{#text-with-icon iconName="url" iconClass="previewCard__icon" class="previewCard__button" tagName='div'}}
+    <a class="previewCard__button__label">Public URL</a>
+  {{/text-with-icon}}
+
+  {{#text-with-icon iconName="remove" iconClass="previewCard__icon" class="previewCard__button" tagName='div'}}
+    <a class="previewCard__button__label">Remove</a>
+  {{/text-with-icon}}
+</div>

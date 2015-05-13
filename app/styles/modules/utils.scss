@@ -14,3 +14,13 @@
     }
   }
 }
+
+@mixin concatChildText($childElement, $width: 100%) {
+  width: $width;
+
+  #{$childElement} {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

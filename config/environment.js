@@ -23,7 +23,7 @@ module.exports = function(environment) {
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
       'connect-src': "'self' www.google-analytics.com wss://*.firebaseio.com",
       'font-src': "'self' data: fonts.gstatic.com",
-      'img-src': "'self' google-analytics.com",
+      'img-src': "'self' google-analytics.com *.placecage.com",
       'style-src': "'self' 'unsafe-inline' fonts.googleapis.com",
       'media-src': "'self'"
     }
