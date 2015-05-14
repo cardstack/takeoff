@@ -3,6 +3,7 @@
   border: 2px dashed $colors-white-base;
   background: $colors-yellow-dark;
   width: 100%;
-  height: $size-card-preview-height;
+  height: $size-cardPreview-height;
   margin-bottom: $size-margin-large;
+  cursor: pointer;
 }

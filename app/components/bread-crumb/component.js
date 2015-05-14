@@ -17,7 +17,12 @@ export default Component.extend({
   routeHierarchy: computed('currentRouteName', {
     get() {
       const container = get(this, 'container');
-      const currentRouteName = getWithDefault(this, 'currentRouteName', []);
+      const currentRouteName = getWithDefault(this, 'currentRouteName', '');
+
+      if (currentRouteName === '') {
+        return;
+      }
+
       const routeNames = currentRouteName.split('.');
 
       const filteredRouteNames = filter(routeNames, (name) => {

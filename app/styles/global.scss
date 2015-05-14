@@ -7,6 +7,23 @@ body {
   height: 100%;
 }
 
-body, html {
-  font-family: $fontFamily-main;
+main {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: $size-aside-width;
+  width: $size-main-width;
+  overflow-y: auto;
+  margin-top: $size-navBar-height;
+  padding-top: $size-padding-large;
+}
+
+aside {
+  width: $size-aside-width;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
 }

@@ -1,0 +1,16 @@
+.pageModal {
+  &__body {
+    padding: $size-padding-xlarge;
+  }
+
+  &__template {
+    margin-bottom: $size-margin-default;
+    text-align: center;
+  }
+
+  &__templateImage {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.20);
+    margin-bottom: $size-margin-small;
+    cursor: pointer;
+  }
+}

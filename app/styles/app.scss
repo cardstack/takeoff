@@ -1,10 +1,11 @@
-// bootstrap
-@import "bootstrap";
-
 // modules
 @import "modules/variables";
+@import "bootstrap-custom";
 @import "modules/typography";
 @import "modules/utils";
+@import "modules/ember-modal-dialog/ember-modal-structure";
+@import "modules/ember-modal-dialog/ember-modal-appearance";
+@import "modules/modals";
 
 // global
 @import "global";
@@ -15,6 +16,7 @@
 @import "components/new-card";
 @import "components/bread-crumb";
 @import "components/side-bar";
+@import "components/flash-messages";
 
 // routes
 @import "routes/page/index";

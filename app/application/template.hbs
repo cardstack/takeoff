@@ -1,1 +1,7 @@
+<div class="flashMessages__container">
+  {{#each flashMessages.arrangedQueue as |flash|}}
+    {{flash-message flash=flash}}
+  {{/each}}
+</div>
+
 {{outlet}}

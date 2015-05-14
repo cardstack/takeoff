@@ -3,7 +3,21 @@ import Route from '../../basic/route';
 // import Environment from 'environment';
 // import UUID from 'UUID';
 
+const {
+  set: set
+} = Ember;
+
 export default Route.extend({
+  breadCrumb: null,
+
+  afterModel(model) {
+    const title = `Editing: ${model.get('title')}`;
+
+    set(this, 'breadCrumb', {
+      title
+    });
+  },
+
   activate() {
     // const environment = new Environment({
     //   containers: {
