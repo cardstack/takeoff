@@ -18,15 +18,20 @@ export default Route.extend({
 
     createPage(templateId) {
       const flashMessages = get(this, 'flashMessages');
-      this.store.createRecord('page', {
+      const page = this.store.createRecord('page', {
         templateId,
         id: UUID.generate(),
         title: 'Untitled page',
         imageUrl: `/assets/images/template-${templateId}.svg`
       });
 
-      flashMessages.success('Created new page');
-      this.send('closeModal');
+      page.save().then(() => {
+        flashMessages.success('Created new page');
+      }).catch((error) => {
+        flashMessages.danger(error);
+      }).finally(() => {
+        this.send('closeModal');
+      });
     }
   }
 });

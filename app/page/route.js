@@ -1,10 +1,8 @@
 import Ember from 'ember';
 import Route from '../basic/route';
-import UUID from 'UUID';
 
 const {
-  get: get,
-  isEmpty
+  get: get
 } = Ember;
 
 export default Route.extend({
@@ -14,42 +12,23 @@ export default Route.extend({
   },
 
   model() {
-    const noPages = isEmpty(this.store.all('page'));
-
-    if (!noPages) {
-      return;
-    }
-
-    this.store.createRecord('page', {
-      id: UUID.generate(),
-      templateId: 0,
-      title: 'The Mutants Are Revolting',
-      imageUrl: 'http://www.placecage.com/c/300/350'
-    });
-    this.store.createRecord('page', {
-      id: UUID.generate(),
-      templateId: 1,
-      title: 'A Taste of Freedom',
-      imageUrl: 'http://www.placecage.com/g/300/350'
-    });
-    this.store.createRecord('page', {
-      id: UUID.generate(),
-      templateId: 0,
-      title: 'How Hermes Requisitioned His Groove Back',
-      imageUrl: 'http://www.placecage.com/300/350'
-    });
-
-    return this.store.all('page');
+    return this.store.find('page');
   },
 
   actions: {
     removePage(id = null) {
       const flashMessages = get(this, 'flashMessages');
-      const model = get(this, 'currentModel');
-      const page = model.findBy('id', id);
-      page.deleteRecord();
-      model.removeObject(page);
-      flashMessages.success('Page removed successfully');
+
+      this.store.findById('page', id)
+      .then((page) => {
+        page.destroyRecord();
+      })
+      .then(() => {
+        flashMessages.success('Page removed successfully');
+      })
+      .catch((error) => {
+        flashMessages.danger(error);
+      });
     }
   }
 });
