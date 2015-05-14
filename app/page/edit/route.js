@@ -14,8 +14,7 @@ export default Route.extend({
     const title = `Editing: ${model.get('title')}`;
 
     set(this, 'breadCrumb', {
-      title,
-      iconName: 'download-black'
+      title
     });
   },
 
