@@ -30,7 +30,7 @@ module.exports = function(app) {
   });
 
   pagesRouter.post('/', function(req, res) {
-    res.status(201).end();
+    res.status(200).end();
   });
 
   pagesRouter.get('/:id', function(req, res) {
