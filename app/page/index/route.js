@@ -27,8 +27,8 @@ export default Route.extend({
 
       page.save().then(() => {
         flashMessages.success('Created new page');
-      }).catch((error) => {
-        flashMessages.danger(error);
+      }).catch(() => {
+        flashMessages.danger('Something went wrong!');
       }).finally(() => {
         this.send('closeModal');
       });
