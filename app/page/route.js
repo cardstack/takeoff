@@ -6,11 +6,6 @@ const {
 } = Ember;
 
 export default Route.extend({
-  breadCrumb: {
-    title: 'Home',
-    iconName: 'avatar'
-  },
-
   model() {
     return this.store.find('page');
   },

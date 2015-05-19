@@ -7,6 +7,11 @@ const {
 } = Ember;
 
 export default Route.extend({
+  breadCrumb: {
+    title: 'Home',
+    iconName: 'avatar'
+  },
+
   actions: {
     toggleModal() {
       this.controller.toggleProperty('isShowingModal');

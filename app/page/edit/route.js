@@ -14,11 +14,12 @@ export default Route.extend({
     const title = `Editing: ${model.get('title')}`;
 
     set(this, 'breadCrumb', {
-      title
+      title,
+      iconName: 'tiles-black'
     });
   },
 
-  activate() {
+  // activate() {
     // const environment = new Environment({
     //   containers: {
     //     'container-1': {
@@ -48,5 +49,5 @@ export default Route.extend({
     // container1.render('#container-slot-1');
     // container2.render('#container-slot-2');
     // sidebar1.render('#sidebar');
-  }
+  // }
 });
