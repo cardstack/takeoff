@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Card-Select-Copy" sketch:type="MSArtboardGroup" transform="translate(-160.000000, -66.000000)" fill="#000000">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(160.000000, 66.000000)">
+                <path d="M8.5,10.7666667 L17,10.7666667 L17,5.66666667 L8.5,5.66666667 L8.5,10.7666667 Z" id="Fill-1226" sketch:type="MSShapeGroup"></path>
+                <path d="M0,10.7666667 L0.000283333333,10.7666667 L7.93333333,10.7666667 L7.93333333,5.66666667 L0,5.66666667 L0,10.7666667 Z" id="Fill-1227" sketch:type="MSShapeGroup"></path>
+                <path d="M16.7166667,0 L0.283333333,0 C0.12665,0 0,0.12665 0,0.283333333 L0,5.1 L17,5.1 L17,0.283333333 C17,0.12665 16.87335,0 16.7166667,0" id="Fill-1228" sketch:type="MSShapeGroup"></path>
+                <path d="M8.5,17 L16.7166667,17 C16.87335,17 17,16.87335 17,16.7166667 L17,11.3333333 L8.5,11.3333333 L8.5,17 Z" id="Fill-1229" sketch:type="MSShapeGroup"></path>
+                <path d="M0.000141666667,11.3333333 L0.000141666667,16.7166667 C0.000141666667,16.87335 0.126791667,17 0.283475,17 L7.933475,17 L7.933475,11.3333333 L0.000141666667,11.3333333 L0.000141666667,11.3333333 Z" id="Fill-1230" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
