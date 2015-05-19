@@ -9,6 +9,14 @@ const {
 export default Component.extend({
   tagName: 'span',
 
+  iconClass: computed('iconName', {
+    get() {
+      const iconName = get(this, 'iconName');
+
+      return `icon icon-${iconName}`;
+    }
+  }),
+
   iconPath: computed('iconName', {
     get() {
       const iconName = get(this, 'iconName');

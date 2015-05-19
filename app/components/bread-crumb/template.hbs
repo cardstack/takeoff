@@ -2,7 +2,7 @@
   {{#each routeHierarchy as |route|}}
     <li>
       {{#link-to route.path}}
-        {{#text-with-icon iconName=route.iconName}}
+        {{#text-with-icon iconName=route.iconName iconStyle=route.iconStyle iconWidth=16 iconHeight=16 iconAnchor="Page-1"}}
           {{route.title}}
         {{/text-with-icon}}
       {{/link-to}}

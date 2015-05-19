@@ -1,5 +1,5 @@
 {{#if iconName}}
-  <img class="icon" src={{iconPath}} class={{iconClass}}>{{yield}}
+  {{inline-svg class=iconClass src=iconPath width=iconWidth height=iconHeight anchor=iconAnchor}}{{yield}}
 {{else}}
   {{yield}}
 {{/if}}

@@ -30,7 +30,15 @@ export default Component.extend({
       });
 
       return map(filteredRouteNames, (name, index) => {
-        const path = routeNames.slice(0, index + 1).join('.');
+        let path;
+        const routes = routeNames.slice(0, index + 1);
+
+        if (routes.length === 1) {
+          path = `${name}.index`;
+        } else {
+          path = routes.join('.');
+        }
+
         const routeObject = container.lookup(`route:${path}`);
         const breadCrumb = routeObject.getWithDefault('breadCrumb', {});
         const title = getWithDefault(breadCrumb, 'title', name);

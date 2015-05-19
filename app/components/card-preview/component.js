@@ -1,13 +1,14 @@
 import Ember from 'ember';
 
+const get = Ember.get;
 const {
-  get: get,
+  Component,
   computed
 } = Ember;
 
 const { htmlSafe } = Ember.String;
 
-export default Ember.Component.extend({
+export default Component.extend({
   classNames: [ 'previewCard' ],
   attributeBindings: [ 'style' ],
 
