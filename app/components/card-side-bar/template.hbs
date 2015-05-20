@@ -1,0 +1,27 @@
+<div class="sideBar__cards">
+  <img class="sideBar__logo" src="assets/images/icon-cardstack.svg" alt="CardStack">
+  <div class="sideBar__cards__content">
+    <section class="sideBar__heading">
+      <h1 class="sideBar__title">
+        Select Card Type
+      </h1>
+    </section>
+    <div class="sideBar__content__escaped">
+      {{#accordion-list class="sideBar__cardTypes" items=cardTypes itemClass="sideBar__cardType" toggleVisibility="toggleCardTypeVisibility" as |accordion item index|}}
+        <span class="sideBar__cardType__label" {{action "toggleVisibility" index target=accordion}}>
+          {{item.name}}
+        </span>
+        {{#if item.isExpanded}}
+          {{inline-svg class="sideBar__cardType__expandIcon" src="assets/images/icon-minus.svg" height=20 width=20 anchor="Page-1"}}
+          <ul class="sideBar__cardsList">
+            {{#each item.cards as |card|}}
+              {{accordion-item item=card confirmClick="addCardToTemplate" handleClick="toggleSlotSelection"}}
+            {{/each}}
+          </ul>
+          {{else}}
+            {{inline-svg class="sideBar__cardType__expandIcon" src="assets/images/icon-add.svg" height=20 width=20 anchor="Page-1"}}
+        {{/if}}
+      {{/accordion-list}}
+    </div>
+  </div>
+</div>
