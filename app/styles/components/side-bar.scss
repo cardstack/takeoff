@@ -1,8 +1,11 @@
 .sideBar {
   min-height: 100vh;
   background-color: $colors-gray-darkest;
-  padding: $size-padding-default;
   color: $colors-white-base;
+
+  &__logo {
+    margin: $size-padding-default;
+  }
 
   &__content {
     padding: $size-padding-xlarge;
@@ -10,11 +13,12 @@
   }
 
   &__heading {
-    margin-bottom: $size-margin-small;
+    padding: $size-padding-xlarge;
   }
 
   &__title {
     font-size: 1em;
+    margin-top: 0;
     margin-bottom: $size-margin-default;
   }
 
@@ -32,7 +36,7 @@
       position: relative;
       list-style: none;
       line-height: 1.5em;
-      margin-left: 2em;
+      margin-left: 3.5em;
       margin-bottom: $size-margin-small;
       &:before {
         box-sizing: border-box;
