@@ -7,6 +7,7 @@ const {
 
 export default Slot.extend({
   type: attr('string'),
+  name: attr('string'),
   position: attr('number'),
   options: attr('object')
 });

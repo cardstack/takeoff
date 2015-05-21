@@ -1,0 +1,8 @@
+.templateSlot {
+  @include centerChildElement('svg', false);
+  overflow: hidden;
+
+  & > svg {
+    display: none;
+  }
+}

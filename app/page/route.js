@@ -1,9 +1,7 @@
 import Ember from 'ember';
 import Route from '../basic/route';
 
-const {
-  get: get
-} = Ember;
+const get = Ember.get;
 
 export default Route.extend({
   model() {
@@ -24,6 +22,18 @@ export default Route.extend({
       .catch((error) => {
         flashMessages.danger(error);
       });
+    },
+
+    addCard(card) {
+      const currentPageModel = this.modelFor('page.edit');
+      const newCard = this.store.createRecord('card', card);
+
+      newCard.set('page', currentPageModel);
+      return newCard.save();
+    },
+
+    toggleSlotSelection(isSelectingSlot) {
+      this.controllerFor('page.edit').set('isSelectingSlot', isSelectingSlot);
     }
   }
 });

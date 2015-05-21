@@ -1,0 +1,54 @@
+.sideBar__escaped {
+  padding: 0;
+}
+
+.sideBar__cardTypes, .sideBar__cardsList {
+  @extend .list-unstyled;
+}
+
+.sideBar__cardType {
+  border-top: 2px solid $colors-gray-darker;
+  border-bottom: 2px solid $colors-gray-darker;
+  padding: $size-padding-large;
+  color: $colors-gray-light;
+  font-size: 1.5em;
+  &:hover {
+    background-color: lighten($colors-gray-darkest, 5%);
+  }
+}
+
+.sideBar__cardType__label {
+  cursor: pointer;
+}
+
+.sideBar__cardType + .sideBar__cardType {
+  border-top: 0;
+}
+
+.sideBar__cardType__expandIcon {
+  margin-top: $size-padding-small;
+  float: right;
+}
+
+.sideBar__cardItem {
+  @include centerChildElement('img');
+  cursor: pointer;
+  flex-direction: column;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2);
+  background-color: $colors-white-base;
+  border-radius: 3px;
+  padding: $size-padding-large;
+  height: $size-sideBar-card-height;
+  text-align: center;
+  margin: $size-margin-default 0;
+
+  &__label {
+    margin-top: $size-margin-small;
+    font-size: 0.65em;
+    color: $colors-gray-darker;
+  }
+
+  &.is-selecting-slot {
+    border: 3px solid $colors-yellow-base;
+  }
+}

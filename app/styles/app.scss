@@ -16,8 +16,11 @@
 @import "components/new-card";
 @import "components/bread-crumb";
 @import "components/side-bar";
+@import "components/card-side-bar";
 @import "components/flash-messages";
 @import "components/text-with-icon";
+@import "components/template-editor";
+@import "components/template-slot";
 
 // routes
 @import "routes/page/index";

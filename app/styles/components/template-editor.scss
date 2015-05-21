@@ -1,0 +1,106 @@
+@mixin templateElement($height, $width) {
+  height: $height;
+  width: $width;
+  display: inline-block;
+  background-color: $colors-gray-lighter;
+  border: 1px dashed $colors-gray-light;
+}
+
+.templateEdit {
+  &__container {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: $size-margin-large;
+    margin-left: $size-margin-default;
+    margin-right: $size-margin-default;
+  }
+
+  &__navBar {
+    background-color: $colors-white-base;
+    height: 50px;
+    width: 100%;
+    padding: $size-padding-default;
+
+    &__brand {
+      @include templateElement(100%, 20%);
+    }
+  }
+
+  &__hero {
+    background-color: darken($colors-gray-light, 5%);
+    text-align: center;
+    padding: $size-padding-large;
+
+    &__masthead {
+      @include templateElement(70px, 70%);
+      margin-bottom: $size-margin-default;
+    }
+
+    &__video {
+      @include templateElement(220px, 50%);
+      margin-bottom: $size-margin-default;
+    }
+
+    &__form {
+      @include templateElement(60px, 50%);
+    }
+  }
+
+  &__carousel {
+    @extend .clearfix;
+    padding: $size-padding-xxlarge;
+
+    &__body {
+      @include templateElement(300px, 60%);
+      float: left;
+      margin-right: 5%;
+    }
+
+    &__form {
+      @include templateElement(300px, 35%);
+      float: right;
+    }
+  }
+
+  &__testimonial {
+    background-color: $colors-gray-darkest;
+    padding: $size-padding-large;
+    text-align: center;
+
+    &__body {
+      @include templateElement(80px, 70%);
+    }
+  }
+
+  &__features {
+    background-color: $colors-white-base;
+    padding: $size-padding-xlarge;
+    text-align: center;
+
+    &__body {
+      @include templateElement(220px, 80%);
+    }
+  }
+
+  &__footer {
+    background-color: $colors-gray-darkest;
+    padding: $size-padding-xlarge;
+    text-align: center;
+
+    &__body {
+      @include templateElement(220px, 80%);
+    }
+  }
+}
+
+.templateEdit.is-selecting-slot {
+  .templateSlot {
+    &:hover {
+      svg {
+        display: block;
+      }
+      cursor: pointer;
+      background-color: $colors-yellow-base;
+      border-color: $colors-yellow-dark;
+    }
+  }
+}

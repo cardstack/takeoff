@@ -2,11 +2,13 @@ import Ember from 'ember';
 import Route from '../../basic/route';
 import UUID from 'UUID';
 
-const {
-  get: get
-} = Ember;
+const get = Ember.get;
 
 export default Route.extend({
+  beforeModel() {
+    this.controllerFor('page').set('currentSideBar', 'instructions-side-bar');
+  },
+
   breadCrumb: {
     title: 'Home',
     iconName: 'avatar'

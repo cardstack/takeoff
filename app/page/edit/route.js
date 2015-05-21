@@ -3,11 +3,13 @@ import Route from '../../basic/route';
 // import Environment from 'environment';
 // import UUID from 'UUID';
 
-const {
-  set: set
-} = Ember;
+const set = Ember.set;
 
 export default Route.extend({
+  beforeModel() {
+    this.controllerFor('page').set('currentSideBar', 'card-side-bar');
+  },
+
   breadCrumb: null,
 
   afterModel(model) {
@@ -17,7 +19,7 @@ export default Route.extend({
       title,
       iconName: 'tiles-black'
     });
-  },
+  }
 
   // activate() {
     // const environment = new Environment({
