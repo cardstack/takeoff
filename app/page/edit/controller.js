@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 const get = Ember.get;
-const set = Ember.set;
 const {
-  Controller
+  Controller,
+  setProperties
 } = Ember;
 
 export default Controller.extend({
@@ -33,12 +33,15 @@ export default Controller.extend({
 
       newCard.set('page', currentPage);
       newCard.save().then(() => {
-        flashMessages.successe(`Added ${name} to slot ${position}`);
+        flashMessages.success(`Added ${name} to slot ${position}`);
       })
       .catch(() => {
         flashMessages.danger('Something went wrong!');
       }).finally(() => {
-        set(this, 'isSelectingSlot', false);
+        setProperties(this, {
+          isSelectingSlot: false,
+          selectedCard: null
+        });
       });
     }
   }
