@@ -1,5 +1,6 @@
 .templateSlot {
   @include centerChildElement('svg', false);
+  z-index: $zIndex-2;
   overflow: hidden;
 
   & > svg {

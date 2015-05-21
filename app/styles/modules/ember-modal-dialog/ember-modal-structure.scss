@@ -11,11 +11,11 @@
   position: fixed;
   right: $size-aside-width;
   top: 0;
-  z-index: 1100;
+  z-index: $zIndex-8;
 }
 
 .ember-modal-dialog {
-  z-index: 1200;
+  z-index: $zIndex-9;
   min-width: 90%;
 
   &.ember-modal-dialog-in-place {
