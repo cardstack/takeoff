@@ -103,8 +103,8 @@ export default Component.extend({
       this.sendAction('addCard', card);
     },
 
-    toggleSlotSelection() {
-      this.sendAction('toggleSlotSelection');
+    toggleSlotSelection(card) {
+      this.sendAction('toggleSlotSelection', card);
     }
   }
 });

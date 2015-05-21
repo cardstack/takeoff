@@ -1,5 +1,6 @@
 import Ember from 'ember';
 
+const get = Ember.get;
 const {
   Component
 } = Ember;
@@ -14,7 +15,8 @@ export default Component.extend({
 
   actions: {
     itemClick() {
-      this.sendAction('handleClick');
+      const item = get(this, 'item');
+      this.sendAction('handleClick', item);
     }
   }
 });

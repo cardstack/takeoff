@@ -32,10 +32,11 @@ export default Route.extend({
       return newCard.save();
     },
 
-    toggleSlotSelection() {
+    toggleSlotSelection(card) {
       const flashMessages = get(this, 'flashMessages');
       flashMessages.info('Select a slot');
       this.controllerFor('page.edit').toggleProperty('isSelectingSlot');
+      this.controllerFor('page.edit').set('selectedCard', card);
     }
   }
 });
