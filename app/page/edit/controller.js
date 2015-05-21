@@ -12,18 +12,19 @@ export default Controller.extend({
 
   actions: {
     chooseSlot(position) {
-      const flashMessages = get(this, 'flashMessages');
       const isSelectingSlot = get(this, 'isSelectingSlot');
       const selectedCard = get(this, 'selectedCard');
+
+      if (!isSelectingSlot || !selectedCard) {
+        return;
+      }
+
+      const flashMessages = get(this, 'flashMessages');
       const currentPage = get(this, 'model');
       const {
         name,
         type
       } = selectedCard;
-
-      if (!isSelectingSlot || !selectedCard) {
-        return;
-      }
 
       const newCard = this.store.createRecord('card', {
         position,
