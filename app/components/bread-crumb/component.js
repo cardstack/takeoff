@@ -1,11 +1,11 @@
 import Ember from 'ember';
 
+const get = Ember.get;
 const {
   EnumerableUtils,
   Component,
   computed,
-  getWithDefault,
-  get: get
+  getWithDefault
 } = Ember;
 
 const {

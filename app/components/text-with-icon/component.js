@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
+const get = Ember.get;
 const {
   Component,
-  computed,
-  get: get
+  computed
 } = Ember;
 
 export default Component.extend({

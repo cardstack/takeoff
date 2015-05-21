@@ -3,10 +3,17 @@ import Route from '../../basic/route';
 import UUID from 'UUID';
 
 const get = Ember.get;
+const set = Ember.set;
+const {
+  inject
+} = Ember;
 
 export default Route.extend({
+  sidebarManager: inject.service(),
+
   beforeModel() {
-    this.controllerFor('page').set('currentSideBar', 'instructions-side-bar');
+    const sidebarManager = get(this, 'sidebarManager');
+    set(sidebarManager, 'currentSideBar', 'instructions-side-bar');
   },
 
   breadCrumb: {

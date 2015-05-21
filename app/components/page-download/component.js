@@ -1,11 +1,12 @@
 import Ember from 'ember';
 
+const get = Ember.get;
 const {
-  get: get,
+  Component,
   computed
 } = Ember;
 
-export default Ember.Component.extend({
+export default Component.extend({
   tarball: computed('pageId', {
     get() {
       const pageId = get(this, 'pageId');

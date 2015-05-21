@@ -2,8 +2,11 @@ import Ember from 'ember';
 
 const get = Ember.get;
 const set = Ember.set;
+const {
+  Component
+} = Ember;
 
-export default Ember.Component.extend({
+export default Component.extend({
   classNames: [ 'sideBar', 'sideBar__escaped' ],
   cardTypes: [
     {
@@ -100,8 +103,8 @@ export default Ember.Component.extend({
       this.sendAction('addCard', card);
     },
 
-    toggleSlotSelection(isSelectingSlot) {
-      this.sendAction('toggleSlotSelection', isSelectingSlot);
+    toggleSlotSelection() {
+      this.sendAction('toggleSlotSelection');
     }
   }
 });

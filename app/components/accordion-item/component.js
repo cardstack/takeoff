@@ -1,12 +1,12 @@
 import Ember from 'ember';
 
-const get = Ember.get;
+const {
+  Component
+} = Ember;
 
-export default Ember.Component.extend({
+export default Component.extend({
   tagName: 'li',
   classNames: [ 'sideBar__cardItem' ],
-  classNameBindings: [ 'isSelectingSlot:is-selecting-slot' ],
-  isSelectingSlot: false,
 
   click() {
     this.send('itemClick');
@@ -14,13 +14,7 @@ export default Ember.Component.extend({
 
   actions: {
     itemClick() {
-      this.toggleProperty('isSelectingSlot');
-      this.sendAction('handleClick', get(this, 'isSelectingSlot'));
-    },
-
-    confirm() {
-      const item = get(this, 'item');
-      this.sendAction('confirmClick', item);
+      this.sendAction('handleClick');
     }
   }
 });

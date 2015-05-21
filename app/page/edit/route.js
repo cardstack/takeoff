@@ -3,11 +3,18 @@ import Route from '../../basic/route';
 // import Environment from 'environment';
 // import UUID from 'UUID';
 
+const get = Ember.get;
 const set = Ember.set;
+const {
+  inject
+} = Ember;
 
 export default Route.extend({
+  sidebarManager: inject.service(),
+
   beforeModel() {
-    this.controllerFor('page').set('currentSideBar', 'card-side-bar');
+    const sidebarManager = get(this, 'sidebarManager');
+    set(sidebarManager, 'currentSideBar', 'card-side-bar');
   },
 
   breadCrumb: null,

@@ -1,8 +1,11 @@
 import Ember from 'ember';
 
 const get = Ember.get;
+const {
+  Component
+} = Ember;
 
-export default Ember.Component.extend({
+export default Component.extend({
   classNames: [ 'templateSlot' ],
 
   click() {

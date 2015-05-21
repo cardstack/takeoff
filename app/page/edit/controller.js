@@ -2,8 +2,11 @@ import Ember from 'ember';
 
 const get = Ember.get;
 const set = Ember.set;
+const {
+  Controller
+} = Ember;
 
-export default Ember.Controller.extend({
+export default Controller.extend({
   isSelectingSlot: false,
 
   actions: {

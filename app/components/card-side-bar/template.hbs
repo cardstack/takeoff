@@ -15,7 +15,7 @@
           {{inline-svg class="sideBar__cardType__expandIcon" src="assets/images/icon-minus.svg" height=20 width=20 anchor="Page-1"}}
           <ul class="sideBar__cardsList">
             {{#each item.cards as |card|}}
-              {{accordion-item item=card confirmClick="addCardToTemplate" handleClick="toggleSlotSelection"}}
+              {{accordion-item item=card handleClick="toggleSlotSelection"}}
             {{/each}}
           </ul>
           {{else}}

@@ -1,7 +1,14 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
-  application: Ember.inject.controller(),
+const {
+  Controller,
+  inject,
+  computed
+} = Ember;
 
-  currentSideBar: null
+export default Controller.extend({
+  application: inject.controller(),
+  sidebarManager: inject.service(),
+
+  currentSideBar: computed.alias('sidebarManager.currentSideBar')
 });

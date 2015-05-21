@@ -1,10 +1,9 @@
 import Ember from 'ember';
+import Route from '../../basic/route';
 
-const {
-  set: set
-} = Ember;
+const set = Ember.set;
 
-export default Ember.Route.extend({
+export default Route.extend({
   breadCrumb: null,
 
   afterModel(model) {

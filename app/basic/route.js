@@ -1,11 +1,12 @@
 import Ember from 'ember';
 
+const get = Ember.get;
 const {
-  $,
-  get: get
+  Route,
+  $
 } = Ember;
 
-export default Ember.Route.extend({
+export default Route.extend({
   activate() {
     const routeName = get(this, 'routeName');
     const routeNameBEM = routeName.replace('.', '__');

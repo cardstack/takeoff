@@ -3,6 +3,7 @@ import Ember from 'ember';
 const get = Ember.get;
 
 const {
+  Component,
   Handlebars,
   computed
 } = Ember;
@@ -15,7 +16,7 @@ const {
   htmlSafe
 } = Ember.String;
 
-export default Ember.Component.extend({
+export default Component.extend({
   tagName: 'svg',
   attributeBindings: [ 'viewBox', 'width', 'height' ],
 
