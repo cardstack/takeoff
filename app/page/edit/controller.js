@@ -44,6 +44,10 @@ export default Controller.extend({
           selectedCard: null
         });
       });
+    },
+
+    editCard(card) {
+      console.log(card);
     }
-  }
+  },
 });

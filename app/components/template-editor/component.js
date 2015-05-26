@@ -38,6 +38,10 @@ export default Component.extend({
   actions: {
     sendPosition(position) {
       this.sendAction('sendPosition', position);
+    },
+
+    editCard(card) {
+      this.sendAction('editCard', card);
     }
   }
 });
