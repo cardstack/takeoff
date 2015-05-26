@@ -8,6 +8,7 @@ const {
 
 export default Component.extend({
   classNames: [ 'templateSlot' ],
+  classNameBindings: [ 'hasCard:has-card' ],
   hasCard: computed.bool('card'),
 
   click() {
