@@ -15,8 +15,9 @@ export default Component.extend({
       cards: [
         {
           name: 'Mailchimp',
+          description: 'Newsletter management',
           type: 'form',
-          imageUrl: 'assets/images/card-mailchimp.png',
+          thumbnail: 'assets/images/card-mailchimp.png',
           showName: false
         }
       ]
@@ -27,14 +28,16 @@ export default Component.extend({
       cards: [
         {
           name: 'Vimeo',
+          description: 'Video hosting for creators',
           type: 'video',
-          imageUrl: 'assets/images/card-vimeo.png',
+          thumbnail: 'assets/images/card-vimeo.png',
           showName: false
         },
         {
           name: 'YouTube',
+          description: 'Hosts user-generated videos',
           type: 'video',
-          imageUrl: 'assets/images/card-youtube.png',
+          thumbnail: 'assets/images/card-youtube.png',
           showName: false
         }
       ]
@@ -45,14 +48,16 @@ export default Component.extend({
       cards: [
         {
           name: 'Background Slideshow',
+          description: 'Rotating hero images',
           type: 'image',
-          imageUrl: 'assets/images/card-background-slideshow.png',
+          thumbnail: 'assets/images/card-background-slideshow.png',
           showName: true
         },
         {
           name: 'Image',
+          description: 'Link to and import any image',
           type: 'image',
-          imageUrl: 'assets/images/card-image.png',
+          thumbnail: 'assets/images/card-image.png',
           showName: true
         }
       ]
@@ -63,14 +68,16 @@ export default Component.extend({
       cards: [
         {
           name: 'Bullet Points',
+          description: 'Create an ordered list of images and/or text',
           type: 'text',
-          imageUrl: 'assets/images/card-bullet-points.png',
+          thumbnail: 'assets/images/card-bullet-points.png',
           showName: true
         },
         {
           name: 'Plain Text',
+          description: 'Just a plain bit of text',
           type: 'text',
-          imageUrl: 'assets/images/card-plain-text.png',
+          thumbnail: 'assets/images/card-plain-text.png',
           showName: true
         }
       ]
@@ -81,8 +88,9 @@ export default Component.extend({
       cards: [
         {
           name: 'Codepen',
+          description: 'Front End Developer Playground & Code Editor',
           type: 'code',
-          imageUrl: 'assets/images/card-codepen.png',
+          thumbnail: 'assets/images/card-codepen.png',
           showName: false
         }
       ]
