@@ -1,9 +1,20 @@
 .templateSlot {
   @include centerChildElement('svg', false);
+  @include centerChildElement('img', false);
   z-index: $zIndex-2;
   overflow: hidden;
 
-  & > svg {
+  &.has-card {
+    background: $colors-white-base;
+  }
+
+  &__cardThumbnail {
+    display: block;
+    max-height: 80%;
+    width: auto;
+  }
+
+  & > .templateSlot__add {
     display: none;
   }
 }
