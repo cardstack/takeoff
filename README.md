@@ -53,4 +53,4 @@ Specify what it takes to deploy your app.
 
 ## LICENSE
 
-MIT Licensed. See [LICENSE](https://github.com/cardstack/takeoff/blob/develop/README.md) for details.
+MIT Licensed. See [LICENSE](https://github.com/cardstack/takeoff/blob/develop/LICENSE) for details.
